@@ -5,24 +5,32 @@
     src: url("Raleway-Regular.ttf") format("truetype");
 }
 
-
 body
 {
     font-family: Raleway-Regular;
-    font-size: 1.1em;
+    font-size: 1em;
     margin-left: 25px;
     margin-top: 0px;
 }
 
-strong, h2, h1, textarea
+strong, h2, h1, h3, textarea
 {
-    font-weight: bold;
-    font-size: 1.1em;   
+    font-weight: bold;  
+}
+
+h1
+{
+    font-size: 1.7em;
+}
+
+h2, h3
+{
+    font-size: 1.3em;
 }
 
 .icon
 {
-    width: 2%;
+    width: 20px;
 }
 
 
@@ -71,7 +79,7 @@ a
 
 .border
 {
-    border-top: 2px solid blue;
+    border-top: 2px solid #0065FC;
 }
 
 
@@ -82,44 +90,69 @@ h1
     padding-top: 30px;
 }
 
-.search_part
+.search_part /*style for the part of search button*/
 {
     display: flex;
     width: 355px;
     height: 42px;
-    border : solid #F2F2F2;
-
+    border : 1px solid #F2F2F2;
+    border-radius: 15px;
 }
 
-.icon_box
+.icon_box /*style for the part of search button*/
 {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50px;
     height: 42px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
 }
 
-.icon_map
+.icon_map /*style for the part of search button*/
 {
-    width: 20px;
+    width: 12px;
 }
 
-textarea
+textarea /*style for the part of search button*/
 {
     resize: none;
+    margin: 0px;
+    padding: 0px; 
+    border : none;
+    line-height: 42px;
+    text-indent: 10px;
+    font-family: Raleway-Regular;
+    font-size: 1em;
+    font-weight: bold;
+    width: 190px; 
 }
 
-.search_button
+.search_button /*style for the part of search button*/
 {
-    width:110px;
+    width:117px;
     height: 42px;
     margin: 0px;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;  
+    background-color: #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    color: white;
 }
 
+.filter
+{
+    display: flex;
+}
 
+.list_filters
+{
+    display: flex;
+}
 
-
+.icon_filters
+{
+    display: flex;
+}
