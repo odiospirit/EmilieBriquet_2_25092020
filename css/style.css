@@ -1,40 +1,27 @@
-@font-face
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap');
 
-{
-    font-family: "Raleway-Regular";
-    src: url("Raleway-Regular.ttf") format("truetype");
-}
+
+ /*style for the page*/
 
 body
 {
-    font-family: Raleway-Regular;
+    font-family: "Raleway", sans-serif;;
     font-size: 1em;
-    margin-left: 25px;
-    margin-top: 0px;
-}
-
-strong, h2, h1, h3, textarea
-{
-    font-weight: bold;  
+    margin: 0 25px;
 }
 
 h1
 {
-    font-size: 1.7em;
+    font-size: 1.5em;
 }
 
 h2, h3
 {
-    font-size: 1.3em;
-}
-
-.icon
-{
-    width: 15px;
+    font-size: 1em;
 }
 
 
-/*style for the part of header*/
+/*style for the header part*/
 
 header
 {
@@ -55,15 +42,14 @@ nav
 .list_menu
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     list-style: none;
     margin: 0px;
 }
 
 li
 {
-    margin-right: 25px;
-    padding-top: 30px;
+    padding: 30px 40px;
 }
 
 a
@@ -83,120 +69,176 @@ a
 }
 
 
-/*style for the part of first section*/
+/*style for the first section part*/
 
 h1
 {
     padding-top: 30px;
 }
 
-.search_part /*style for the part of search button*/
+.button /*style for the research part*/
 {
     display: flex;
-    width: 355px;
-    height: 42px;
-    border : 1px solid #F2F2F2;
-    border-radius: 15px;
+    width: 250px;
+    height: 30px;
 }
 
-.icon_box /*style for the part of search button*/
+.icon_map /*style for the research part*/
 {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 42px;
-    background-color: #F2F2F2;
-    border-radius: 15px 0px 0px 15px;
+    width: 15px;
+    padding: 8px;
+    border: 0.5px solid #F2F2F2;
+    border-radius: 10px 0px 0px 10px;
+    background-color: #F2F2F2;  
 }
 
-textarea /*style for the part of search button*/
+input[type] /*style for the research part*/
 {
-    resize: none;
-    margin: 0px;
-    padding: 0px; 
-    border : none;
-    line-height: 42px;
-    text-indent: 10px;
-    font-family: Raleway-Regular;
-    font-size: 1em;
+    display: flex;
+    padding: 10px;
+    border: 0.5px solid #F2F2F2;
     font-weight: bold;
-    width: 190px; 
 }
 
-.search_button /*style for the part of search button*/
+.search /*style for the research part*/
 {
-    width:117px;
-    height: 42px;
-    margin: 0px;
     display: flex;
-    justify-content: center;
-    align-items: center;  
-    background-color: #0065FC;
-    border-radius: 0px 15px 15px 0px;
+    align-items: center;
+    width: 100px;
+    padding: 10px;
+    border: 0.5px solid #0065FC;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #0065FC;  
     color: white;
 }
 
 
-.filter
+.filters /*style for the filters part*/
 {
     display: flex;
-    margin-top: 50px;
+    margin : 20px 0px;
 }
 
-.title_filter, .ul_filters
-{
-    margin: 0px;
-    display: flex;
-    align-items: center;
-    max-width: 900px;
-}
 
-.li_filters
+.title_filters /*style for the filters part*/
 {
     display: flex;
     align-items: center;
-    padding: 0px;
-    width: 200px;
-    border: 2px solid #bdc3c7;
+}
+
+.ul_filters /*style for the filters part*/
+{
+    display: flex;
+    justify-content: space-evenly;
+    width: 1000px;
+}
+
+.li_filters /*style for the filters part*/
+{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(231, 229, 229);
     border-left: none;
-    border-radius: 25px 25px 25px 25px;
-    list-style: none;
+    border-radius: 50px;
+    padding: 0px 25px 0px 0px;
 }
 
-.icon_box_filter
+.icon_money /*style for the filters part*/
 {
+    width: 20px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 46px;
+    padding: 15px 14px;
+    border: 0.5px solid #DEEBFF;
     background-color: #DEEBFF;
-    border-radius: 20px 15px 25px 25px;
+    border-radius: 100px;
 }
 
-.icon
+.icon_child /*style for the filters part*/
+{
+    width: 15px;
+    display: flex;
+    align-items: center;
+    padding: 13px 17px;
+    border: 0.5px solid #DEEBFF;
+    background-color: #DEEBFF;
+    border-radius: 100px;
+}
+
+.icon_heart /*style for the filters part*/
+{
+    width: 20px;
+    display: flex;
+    align-items: center;
+    padding: 13px;
+    border: 0.5px solid #DEEBFF;
+    background-color: #DEEBFF;
+    border-radius: 100px;
+}
+
+.icon_dog /*style for the filters part*/
+{
+    width: 20px;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    border: 0.5px solid #DEEBFF;
+    background-color: #DEEBFF;
+    border-radius: 100px;
+}
+
+.type_filters /*style for the filters part*/
+{
+    padding-left: 20px;
+}
+
+
+.infos
 {
     display: flex;
-
+    height: 25px;
+    
 }
-
-.type_filters
-{
-    width: 50px;
-}
-
-
-
-
-
-
-
-
-
-
 
 .icon_infos
 {
-    width: 20px;
+    width: 5px;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px;
+    padding:  5px 9px;
 }
+
+.p_infos
+{
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}
+
+.li_filters:hover
+{
+    background-color: rgb(195, 218, 236);
+    color: #0065FC;
+    box-shadow: 10px 5px 5px #0065FC;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
