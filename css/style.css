@@ -8,7 +8,7 @@ body
 {
     font-family: "Raleway", sans-serif;;
     font-size: 0.73em;
-    margin: 40px;
+    margin: 0px 40px;
 }
 
 h1
@@ -212,7 +212,7 @@ input[type] /*research part style*/
 #accommodations
 {
     display: flex;
-    height: 550px;
+    height: 530px;
 }
 
 .all_accommodations /*accomodations section style*/
@@ -222,7 +222,7 @@ input[type] /*research part style*/
     padding: 20px 0px;
     margin-top: 30px;
     margin-right: 30px;
-    width: 800px;
+    width: 750px;
 }
 
 .box_title_accommodations /*accomodations section style*/
@@ -241,24 +241,40 @@ input[type] /*research part style*/
 {
     border-radius: 10px;
     background-color: white;
-    width: 190px;
-    height: 160px;
+    width: 165px;
+    height: 145px;
     padding: 3px;
     margin: 15px;
 }
-
-.lien_housing
+.crop_1 /*accomodations section style*/
 {
-    display: block;
-    height: 100px;
-    overflow-y: hidden;
+    width: 165px;
+    height : 85px;
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
 }
 
-.photo_housing /*accomodations section style*/
+.photo_housing_1 /*accomodations section style*/
 {
-    width: 190px;
-    height: 120px;
+    width: 165px;
+    height: 123px;
+    margin-top: -18px;
+}
+
+.crop_2 /*accomodations section style*/
+{
+    width: 165px;
+    height : 85px;
+    overflow: hidden;
     border-radius: 10px 10px 0px 0px;
+}
+
+.photo_housing_2 /*accomodations section style*/
+{
+    width: 165px;
+    height: 123px;
+    margin-top: -18px;
+    object-fit: cover;
 }
 
 .para_housing /*accomodations section style*/
@@ -291,14 +307,19 @@ input[type] /*research part style*/
 
 .box_title_popular /*most popular section style*/
 {
-    width: 340px;
+    width: 330px;
     display: flex;
     justify-content: space-around;
 }
 
-.box_popular_housing
+.box_popular_housing /*most popular section style*/
 {
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 35px;
+    width: 256px;
+    height: 410px;
 }
 
 .popular_housing /*most popular section style*/
@@ -306,27 +327,121 @@ input[type] /*research part style*/
     display: flex;
     border-radius: 10px;
     background-color: white;
-    width: 250px;
+    width: 249px;
     height: 100px;
     padding: 3px;
 }
 
-.photo_popular /*most popular section style*/
+.crop_popular /*most popular section style*/
 {
     width: 100px;
     height: 100px;
+    overflow: hidden;
     border-radius: 10px 0px 0px 10px;
 }
 
-.p_popular /*most popular section style*/
+.photo_popular /*most popular section style*/
 {
-    padding-left: 16px;
+    width: 150px;
+    height: 110px;
+    margin-left: -25px;
+}
+
+.photo_popular_1 /*most popular section style*/
+{
+    width: 100px;
+    height: 135px;
+    margin-top: -20px;
+}
+
+.box_p_popular /*most popular section style*/
+{
+    padding-left: 10px;
+    width: 134px;
+    display: flex;
+    flex-direction: column;
+}
+
+.p_popular_1 /*most popular section style*/
+{
+    margin-top: 5px;
+    margin-bottom: 0px;
 }
 
 .icon_stars_popular /*most popular section style*/
 {
     width: 13px;
-    padding-top: 30px;
+    padding-top: 25px;
+}
+
+
+
+
+
+
+/*third section style*/
+
+#activities /*activities section style*/
+{
+    margin-top: 50px;
+}
+
+.all_activities
+{
+    height: 400px;
+    display: flex;
+}
+
+.box_activities
+{
+    width: 230px;
+    height: 290px;
+    background-color: white;
+    border: 1px solid #F2F2F2;
+    box-shadow : 1px 1px 5px #F2F2F2;
+    border-radius: 10px;
+}
+
+.crop_vieux_port
+{
+    width: 230px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.photo_vieux_port
+{
+    width: 370px;
+    height: 295px;
+    object-fit: cover;
+    margin-left: -55px;
+}
+
+.title_activities
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.activities_pomegues
+{
+    width: 230px;
+    height: 130px;
+}
+
+.crop_pomegues
+{
+    width: 230px;
+    height: 130px;
+}
+
+.photo_pomegues
+{
+    width: 230px;
+    height: 130px;
+    object-fit: cover;
 }
 
 
