@@ -34,7 +34,7 @@ body
     background-color: #F2F2F2;
 }
 
-h1, strong
+h1, strong, .title_activities
 {
     font-weight: bold;
 }
@@ -62,7 +62,7 @@ header
 
 .logo
 {
-    width: 15%;
+    width: 50%;
 }
 
 .box_nav_left
@@ -74,9 +74,14 @@ header
 {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    margin: 0px;
+}
+
+.para_header
+{
+    border-top: 2px solid #0065FC;
     padding-top: 10px;
-    border-top: 2px solid #0065FC
 }
 
 .nav_right
@@ -100,14 +105,14 @@ header
 {
     width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     padding-top: 12px;
 }
 
 .register
 {
     width: 50%;
-    text-align: center;
+    text-align: end;
     padding-top: 12px;
 }
 
@@ -259,7 +264,7 @@ input[type] /*research part style*/
 .icon_infos /*infos part style*/
 {
     width: 5px;
-    border: 1px solid #F2F2F2;
+    border: 3px solid #F2F2F2;
     border-radius: 20px;
     padding:  5px 10px;
     margin-right: 5px;
@@ -320,7 +325,7 @@ input[type] /*research part style*/
     height: 35%;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 10px grey;
+    box-shadow: 2px 2px 10px rgb(185, 184, 184);
     padding: 4px;
 }
 
@@ -348,14 +353,19 @@ input[type] /*research part style*/
     margin: 0px;
 }
 
-.icon_stars, .icon_stars_popular, .icon_graph /*accomodations and most popular section style*/
+.icon_stars, .icon_graph /*accomodations and most popular section style*/
 {
-    width: 13px;
+    width: 6%;
+}
+
+.icon_stars_popular
+{
+    width: 10%;
 }
 
 .box_all_most_popular /*most popular section style*/
 {
-    width: 30%;
+    width: 25%;
     height: 500px;
     display: flex;
     flex-wrap: wrap;
@@ -384,13 +394,13 @@ input[type] /*research part style*/
     display: flex;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 10px grey;
+    box-shadow: 2px 2px 10px rgb(185, 184, 184);
     padding: 4px;
 }
 
 .box_photo_popular
 {
-    width: 70%;
+    width: 40%;
 }
 
 .photo_popular /*most popular section style*/
@@ -404,7 +414,7 @@ input[type] /*research part style*/
 
 .box_p_popular /*most popular section style*/
 {
-    width: 100%;
+    width: 50%;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
@@ -417,6 +427,14 @@ input[type] /*research part style*/
     margin: 0px;
 }
 
+.plus
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
 
 
 
@@ -425,103 +443,103 @@ input[type] /*research part style*/
 #activities 
 {
     margin-top: 50px;
-    margin-left: 40px;
 }
 
-.all_activities
+.box_title_activities
 {
-    width: 1080px;
-    height: 400px;
+    width: 100%;
+}
+
+.box_all_activities
+{
+    width: 100%;
+    height: 300px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.box_activities
+.box_activities_vieux_port, .box_activities_calanques
 {
-    width: 200px;
+    width: 20%;
     height: 290px;
-    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
     border: 1px solid #F2F2F2;
-    box-shadow : 1px 1px 5px #F2F2F2;
+    box-shadow: 1px 1px 5px #F2F2F2;
+    background-color: white;
     border-radius: 10px;
-}
-
-.crop_vieux_port, .crop_calanques
-{
-    width: 200px;
-    height: 250px;
-    overflow: hidden;
-    border-radius: 10px 10px 0px 0px;
 }
 
 .photo_vieux_port, .photo_calanques
 {
-    width: 400px;
-    height: 290px;
+    width: 100%;
+    height: 254px;
+    border-radius: 10px 10px 0px 0px;
     object-fit: cover;
-    margin-left: -100px;
+    object-position: center;
+}
+
+.box_large_activities
+{
+    width: 100%;
+    height: 254px;
 }
 
 .box_activities_pomegues_frioul, .box_activities_la_garde_longchamp
 {
+    width: 20%;
+    height: 290px;
     display: flex;
     flex-wrap: wrap;
-    width: 200px;
-    height: 290px;
-}
-
-.activities_pomegues, .activities_la_garde, .activities_longchamp
-{
-    width: 200px;
-    height: 135px;
     background-color: white;
-    border: 1px solid #F2F2F2;
-    box-shadow : 1px 1px 5px #F2F2F2;
     border-radius: 10px;
-    margin-bottom: 28px;
 }
 
-.activities_frioul
+.box_pomegues, .box_frioul, .box_la_garde, .box_longchamp
 {
-    width: 200px;
+    width: 100%;
     height: 130px;
-    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
     border: 1px solid #F2F2F2;
-    box-shadow : 1px 1px 5px #F2F2F2;
+    box-shadow: 1px 1px 5px #F2F2F2;
+    background-color: white;
     border-radius: 10px;
-    margin-bottom: 28px;
-}
-
-
-.crop_pomegues, .crop_la_garde, .crop_longchamp
-{
-    width: 200px;
-    height: 115px;
-    overflow: hidden;
-}
-
-.crop_frioul
-{
-    width: 200px;
-    height: 95px;
-    overflow: hidden;
 }
 
 .photo_pomegues, .photo_frioul, .photo_la_garde, .photo_longchamp
 {
-    width: 200px;
-    height: 150px;
+    width: 100%;
+    height: 95px;
     object-fit: cover;
+    object-position: center;
     border-radius: 10px 10px 0px 0px;
+}
+
+.box_small_activities_
+{
+    width: 100%;
+    height: 95px;
+}
+
+.box_pomegues, .box_la_garde
+{
+    margin-bottom: 27px;
 }
 
 .title_activities
 {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
     font-size: 1em;
-    font-weight: bold;
+    border-radius: 0px 0px 10px 10px;
     padding-left: 10px;
+    margin: 0px;
 }
+
+
 
 footer
 {

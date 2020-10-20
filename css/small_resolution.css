@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     font-family: "Raleway", sans-serif;;
-    font-size: 2.4em;
+    font-size: 2.5em;
     margin: 0px;
  }
  
@@ -28,6 +28,29 @@
  {
      font-weight: bold;
  }
+
+ .icon_stars, .icon_graph
+ {
+    width: 5%;
+ }
+
+ .icon_stars_popular
+ {
+     width: 10%;
+ }
+
+ .padding_website_sides
+{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.padding_website_top_bottom
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
  
  
 /*header style*/
@@ -37,7 +60,7 @@ header
     width: 100%;
     height: 200px;
     display: flex;
-    margin-top: 25px;
+    padding-top: 50px;
 }
 
 .box_logo_nav_left
@@ -49,17 +72,18 @@ header
 .box_logo
 {
     width: 100%;
+    padding: 0px 0px 0px 50px
+}
+
+.para_header
+{
+    padding-left: 50px;
+    border-top: none;
 }
 
 .logo
 {
-    width: 53%;
-    padding: 0px 0px 0px 49px;
-}
-
-.box_nav_left
-{
-    width: 50%;
+    width: 43%;
 }
 
 .nav_right
@@ -76,17 +100,16 @@ header
     align-items: baseline;
     list-style: none;
     margin: 0px;
-    padding: 0px;
 }
 
-.nav_left, .blue_border
+.nav_left
 {
     width: 100%;
     display: flex;
     justify-content: center;
-    border-top: none;
     border-bottom: 5px solid #0065FC;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
+    margin: 0px;
 }
 
 .grey_border
@@ -96,7 +119,8 @@ header
     justify-content: center;
     border-top: none;
     border-bottom: 5px solid #F2F2F2;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
+    padding-right: 50px;
 }
 
 .blue
@@ -107,9 +131,10 @@ header
 .register
 {
     width: 100%;
-    align-items: center;
+    display: flex;
+    justify-content: flex-end;
     padding-top: 15px;
-    padding: 0px 49px 0px 0px;
+    padding-right: 50px;
 }
 
 
@@ -118,6 +143,11 @@ header
 .research, .part_research, .title_filters
 {
     width: 100%;
+}
+
+.title_research
+{
+    margin-top: 0px;
 }
 
 .icon_map /*research part style*/
@@ -139,9 +169,9 @@ header
 
 .input_button_search
 {
-    width: 95%;
+    width: 90%;
     display: flex;
-    border: 0.5px solid #F2F2F2;
+    border: 4px solid #F2F2F2;
     border-radius: 0px 30px 30px 0px;
 }
 
@@ -216,7 +246,7 @@ input[type] /*research part style*/
 .type_filters /*filters part style*/
 {
     width: 100%;
-    text-align: center;
+    text-align: start;
 }
 
 .box_infos
@@ -224,7 +254,6 @@ input[type] /*research part style*/
     width: 100%;
     display: flex;
     align-items: center;
-    margin-bottom: 50px;
 }
 
 .box_icon_infos
@@ -235,7 +264,7 @@ input[type] /*research part style*/
 .icon_infos /*infos part style*/
 {
     width: 10px;
-    border: 1px solid #F2F2F2;
+    border: 3px solid rgb(231, 229, 229);
     border-radius: 50px;
     padding:  5px 15px;
     margin-right: 15px;
@@ -264,7 +293,6 @@ input[type] /*research part style*/
 
 
 
-
 /*second section style*/
 
 #accommodations
@@ -279,12 +307,9 @@ input[type] /*research part style*/
 {
     width: 100%;
     height: auto;
-    display: flex;
-    flex-wrap: wrap;
     background-color: #F2F2F2;
     border-radius: 0px;
     margin: 0px;
-    padding: 0px;
 }
 
 .box_title_popular /*most popular section style*/
@@ -298,29 +323,96 @@ input[type] /*research part style*/
 .box_popular_housing /*most popular section style*/
 {
     width: 100%;
-    height: 250px;
+    height: 300px;
     display: flex;
     background-color: white;
-    border-radius: 10px;
-    box-shadow: 10px grey;
+    border-radius: 50px;
+    box-shadow: 20px 20px 20px #e6e3e3;
     padding: 10px;
+    margin: 30px 0px;
+}
+
+.box_photo_popular
+{
+    width: 40%;
+}
+
+.photo_popular /*most popular section style*/
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50px 0px 0px 50px;
+}
+
+.box_p_popular /*most popular section style*/
+{
+    width: 45%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.p_popular
+{
+    width: 100%;
+    margin: 0px;
 }
 
 .box_all_accommodations /*accomodations section style*/
 {
     width: 100%;
     height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: #F2F2F2;
-    margin-right: 30px;
-    padding: 20px;
+    display: block;
+    background-color: white;
+    margin: 0px;
 }
 
-.icon_graph, .icon_stars, .icon_stars_popular
+.box_title_accommodations /*accomodations section style*/
 {
-    width: 5%;
+    width: 100%;
+    height: 5%;
+    margin: 0px;
+}
+
+.box_housing /*accomodations section style*/
+{
+    width: 100%;
+    height: 530px;
+    background-color: white;
+    border-radius: 50px;
+    border: 1px solid #F2F2F2;
+    box-shadow: 20px 20px 20px #F2F2F2;
+    padding: 10px;
+    margin: 30px 0px;
+}
+
+.photo_housing /*accomodations section style*/
+{
+    width: 100%;
+    height: 300px;
+    border-radius: 50px 50px 0px 0px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.para_housing /*accomodations section style*/
+{
+    height: 200px;
+    line-height: 70px;
+    margin: 0px;
+    padding-left: 10px;
+}
+
+.plus 
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
 }
 
 
