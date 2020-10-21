@@ -2,7 +2,6 @@
 
  body
  {   
-    width: 100%;
     display: flex;
     flex-direction: column;
     font-family: "Raleway", sans-serif;;
@@ -17,14 +16,7 @@
 
  }
  
- .footer
- {   
-     width: 100%;
-     display: flex;
-     background-color: #F2F2F2;
- }
- 
- h1, strong
+ h1, strong, .title_activities
  {
      font-weight: bold;
  }
@@ -60,7 +52,6 @@ header
     width: 100%;
     height: 200px;
     display: flex;
-    padding-top: 50px;
 }
 
 .box_logo_nav_left
@@ -75,15 +66,25 @@ header
     padding: 0px 0px 0px 50px
 }
 
+.logo
+{
+    width: 49%;
+}
+
+.nav_left
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 5px solid #0065FC;
+    padding: 15px 0px;
+    margin: 0px;
+}
+
 .para_header
 {
     padding-left: 50px;
     border-top: none;
-}
-
-.logo
-{
-    width: 43%;
 }
 
 .nav_right
@@ -94,22 +95,14 @@ header
 .ul_nav
 {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: flex-end;
     align-items: baseline;
     list-style: none;
     margin: 0px;
-}
-
-.nav_left
-{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    border-bottom: 5px solid #0065FC;
-    padding-bottom: 30px;
-    margin: 0px;
+    padding: 0px;
 }
 
 .grey_border
@@ -119,13 +112,8 @@ header
     justify-content: center;
     border-top: none;
     border-bottom: 5px solid #F2F2F2;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
     padding-right: 50px;
-}
-
-.blue
-{
-    color: #0065FC;
 }
 
 .register
@@ -133,16 +121,33 @@ header
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    padding-top: 15px;
     padding-right: 50px;
 }
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.blue
+{
+    color: #0065FC;
+}
+
 
 
 /*first section style*/
 
-.research, .part_research, .title_filters
+.research
 {
     width: 100%;
+}
+.part_research
+{
+    width: 95%;
+    height: 130px;
+    display: flex;
 }
 
 .title_research
@@ -152,24 +157,18 @@ header
 
 .icon_map /*research part style*/
 {
-    width: 4%;
+    width: 5%;
     display: flex;
-    padding: 40px;
+    padding: 32px;
     border: 0.5px solid #F2F2F2;
     border-radius: 30px 0px 0px 30px;
     background-color: #F2F2F2;  
     object-fit: cover;
 }
 
-.button_search
-{
-    width: 10%;
-    border-radius: 30px;
-}
-
 .input_button_search
 {
-    width: 90%;
+    width: 88%;
     display: flex;
     border: 4px solid #F2F2F2;
     border-radius: 0px 30px 30px 0px;
@@ -177,11 +176,24 @@ header
 
 input[type] /*research part style*/
 {
-    width: 90%;
+    width: 85%;
     display: flex;
-    padding: 10px;
+    font-size: 1.3em;
     font-weight: bold;
     border: none;
+    padding: 30px;
+}
+
+.button_search
+{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    border: 0.5px solid #0065FC;
+    border-radius: 30px 30px 30px 30px;
+    background-color: #0065FC;  
+    color: white;
+    padding: 10px;
 }
 
 .text_button_search
@@ -198,9 +210,14 @@ input[type] /*research part style*/
 
 .filters /*filters part style*/
 {
-    width: 100%;
+    width: 95%;
     margin-top: 50px;  
     display: block;
+}
+
+.title_filters
+{
+    width: 100%;
 }
 
 .ul_filters /*filters part style*/
@@ -210,7 +227,7 @@ input[type] /*research part style*/
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0px;
-    margin: 20px 0px 0px 0px;
+    margin: 30px 0px 0px 0px;
 }
 
 .li_filters /*filters part style*/
@@ -236,8 +253,8 @@ input[type] /*research part style*/
 
 .icon_filters_child /*filters part style*/
 {
-    width: 10%;
-    padding: 20px 30px;
+    width: 45px;
+    padding: 10px 20px;
     border: 0.5px solid #DEEBFF;
     background-color: #DEEBFF;
     border-radius: 50px;
@@ -247,6 +264,7 @@ input[type] /*research part style*/
 {
     width: 100%;
     text-align: start;
+    padding: 0px 20px;
 }
 
 .box_infos
@@ -305,7 +323,7 @@ input[type] /*research part style*/
 
 .box_all_most_popular /*most popular section style*/
 {
-    width: 100%;
+    width: 90%;
     height: auto;
     background-color: #F2F2F2;
     border-radius: 0px;
@@ -320,10 +338,15 @@ input[type] /*research part style*/
     justify-content: space-between;
 }
 
+.title_popular
+{
+    margin: 0px;
+}
+
 .box_popular_housing /*most popular section style*/
 {
-    width: 100%;
-    height: 300px;
+    width: 98%;
+    height: 370px;
     display: flex;
     background-color: white;
     border-radius: 50px;
@@ -361,9 +384,19 @@ input[type] /*research part style*/
     margin: 0px;
 }
 
+.para_popular_1, .para_popular_2
+{
+    margin: 0px;
+}
+
+.para_popular_2
+{
+    margin-top: 30px;
+}
+
 .box_all_accommodations /*accomodations section style*/
 {
-    width: 100%;
+    width: 90%;
     height: auto;
     display: block;
     background-color: white;
@@ -379,7 +412,7 @@ input[type] /*research part style*/
 
 .box_housing /*accomodations section style*/
 {
-    width: 100%;
+    width: 98%;
     height: 530px;
     background-color: white;
     border-radius: 50px;
@@ -415,8 +448,140 @@ input[type] /*research part style*/
     padding-top: 20px;
 }
 
+#activities 
+{
+    margin-top: 0px;
+}
+
+.box_title_activities
+{
+    width: 100%;
+    margin: 0px;
+}
+
+.box_all_activities
+{
+    width: 90%;
+    height: auto;
+    display: block;
+}
+
+.box_activities_vieux_port, .box_activities_calanques
+{
+    width: 98%;
+    height: 530px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #F2F2F2;
+    box-shadow: 20px 20px 20px #F2F2F2;
+    background-color: white;
+    border-radius: 50px;
+    margin: 30px 0px;
+}
+
+.photo_vieux_port, .photo_calanques
+{
+    width: 100%;
+    height: 400px;
+    border-radius: 50px 50px 0px 0px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.box_large_activities
+{
+    width: 100%;
+    height: 400px;
+}
+
+.box_activities_pomegues_frioul, .box_activities_la_garde_longchamp
+{
+    width: 98%;
+    height: 1090px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.box_pomegues, .box_frioul, .box_la_garde, .box_longchamp
+{
+    width: 100%;
+    height: 530px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #F2F2F2;
+    box-shadow: 20px 20px 20px #F2F2F2;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.photo_pomegues, .photo_frioul, .photo_la_garde, .photo_longchamp
+{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50px 50px 0px 0px;
+}
+
+.box_small_activities
+{
+    width: 100%;
+    height: 400px;
+}
+
+.box_pomegues, .box_la_garde
+{
+    margin-bottom: 27px;
+}
+
+.title_activities
+{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    border-radius: 0px 0px 10px 10px;
+    padding-left: 30px;
+    margin: 0px;
+}
 
 
 
+.footer
+{
+    width: 100%;
+    display: flex;
+    background-color: #F2F2F2;
+}
 
+.end
+{
+    width: 90%;
+    display: block;
+    background-color: #F2F2F2;
+    margin: auto;
+}
 
+.about, .lodging, .assistance
+{
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+.ul_footer
+{
+    list-style: none;
+    line-height: 100px;
+    padding: 0px;
+}
+
+.li_footer
+{
+    margin: 0px;
+    padding: 5px;
+    padding-left: 0px;
+}

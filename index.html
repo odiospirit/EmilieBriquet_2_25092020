@@ -6,7 +6,8 @@
 
         <meta charset="utf-8" />
         <title>Reservia, page d'accueil</title>
-        <link rel="stylesheet" href="css/style.css" media="all and (min-width: 481px)"/> <!-- Pour ceux qui ont une résolution supérieur à 768px -->
+        <link rel="stylesheet" href="css/large_resolution.css" media="all and (min-width: 1200px)"/> <!-- Pour ceux qui ont une résolution supérieur à 768px -->
+        <link rel="stylesheet" href="css/medium_resolution.css" media="all and (min-width: 481px and max-width: 1200px)"/> <!-- Pour ceux qui ont une résolution inférieure à 768px -->
         <link rel="stylesheet" href="css/small_resolution.css" media="all and (max-device-width: 480px)"/> <!-- Pour ceux qui ont une résolution inférieure à 768px -->
     
     </head>
@@ -17,7 +18,7 @@
         <!--body split in 2 parts (page and footer)-->
 
 
-        <div class="page"> <!--first part of body-->
+        <div class="page padding_website_top_bottom"> <!--first part of body-->
 
             <header>
 
@@ -61,7 +62,7 @@
 
             <!--Research part in 3 parts (icon / input field / search button)-->
 
-                <div class= "part_research padding_website_sides">
+                <div class= "part_research padding_website_sides padding_website_top_bottom">
                
                     <img class="icon_map" src="icones_logo/icon_map.svg" alt="icon_map"/>
 
@@ -69,7 +70,7 @@
 
                         <input type="text"></input>
                 
-                        <div class="button_search padding_website_rigth">
+                        <div class="button_search">
 
                             <img class="icon_search" src="icones_logo/icon_search.svg" alt="icon_search"/>
 
@@ -155,7 +156,7 @@
 
             <section id="accommodations">
 
-                <div class="box_all_accommodations padding_website_ sides padding_website_top_bottom">
+                <div class="box_all_accommodations padding_website_sides padding_website_top_bottom">
 
                     <h1 class="box_title_accommodations">Hébergements à Marseille</h1>
 
@@ -303,12 +304,13 @@
                         
                         <div class="box_p_popular">
                             
-                            <p class="p_popular">
+                            <div class="p_popular">
+
+                                <p class="para_popular_1"><strong>Hôtel Le soleil du matin</strong></p>
                             
-                                <strong>Hôtel Le soleil du matin</strong></br>
-                                Nuit à partir de <strong>128€</strong></br>
+                                <p class="para_popular_2">Nuit à partir de <strong>128€</strong></p>
                             
-                            </p>
+                            </div>
                                 
                             <div class="stars">
 
@@ -331,12 +333,13 @@
 
                         <div class="box_p_popular">
 
-                            <p class="p_popular">
+                            <div class="p_popular">
                             
-                                <strong>Au coeur de l'eau Chambres d'hôtes</strong></br>
-                                Nuit à partir de <strong>71€</strong></br>
+                                <p class="para_popular_1"><strong>Au coeur de l'eau Chambres d'hôtes</strong></p>
+                                
+                                <p class="para_popular_2">Nuit à partir de <strong>71€</strong></p>
 
-                            </p>
+                            </div>
 
                             <div class="stars">
 
@@ -359,12 +362,13 @@
 
                         <div class="box_p_popular">
 
-                            <p class="p_popular">
+                            <div class="p_popular">
                             
-                                <strong>Hôtel Tout bleu et Blanc</strong></br>
-                                Nuit à partir de <strong>68€</strong><br>
+                                <p class="para_popular_1"><strong>Hôtel Tout bleu et Blanc</strong></p>
+                                
+                                <p class="para_popular_2">Nuit à partir de <strong>68€</strong><p>
 
-                            </p>
+                            </div>
 
                             <div class="stars">
     
@@ -387,11 +391,11 @@
             <!--third section - results of activities-->
 
 
-            <section id="activities">
+            <section id="activities" class="padding_website_top_bottom">
         
-                <h1 class="box_title_activities">Activités à Marseille</h1>
+                <h1 class="box_title_activities padding_website_sides">Activités à Marseille</h1>
 
-                <div class="box_all_activities">
+                <div class="box_all_activities padding_website_sides">
 
                     <div class="box_activities_vieux_port">
 
@@ -461,9 +465,9 @@
         </div>
 
 
-        <div class="footer"> <!--second part of body-->
+        <div class="footer padding_website_top_bottom"> <!--second part of body-->
         
-            <footer>
+            <footer class="end">
 
                 <div class="about">
 

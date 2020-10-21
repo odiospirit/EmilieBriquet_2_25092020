@@ -14,10 +14,10 @@ body
     margin: 0px;
 }
 
-.page, .footer
+.page
 {
     width: 90%;
-    padding: 0px;
+    padding-bottom: 50px;
     margin: auto;
 }
 
@@ -62,7 +62,7 @@ header
 
 .logo
 {
-    width: 50%;
+    width: 30%;
 }
 
 .box_nav_left
@@ -81,7 +81,7 @@ header
 .para_header
 {
     border-top: 2px solid #0065FC;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 .nav_right
@@ -106,14 +106,14 @@ header
     width: 50%;
     display: flex;
     justify-content: flex-end;
-    padding-top: 12px;
+    padding-top: 22px;
 }
 
 .register
 {
     width: 50%;
     text-align: end;
-    padding-top: 12px;
+    padding-top: 22px;
 }
 
 a
@@ -122,7 +122,7 @@ a
     color: black;
 }
 
-.blue, .register
+.blue
 {
     color: #0065FC;
 }
@@ -295,7 +295,7 @@ input[type] /*research part style*/
 #accommodations
 {
     width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;
 }
 
@@ -315,7 +315,7 @@ input[type] /*research part style*/
 .box_title_accommodations /*accomodations section style*/
 {
     width: 100%;
-    height: 5%;
+    height: 25px;
     margin: 0px;
 }
 
@@ -377,7 +377,7 @@ input[type] /*research part style*/
 .box_title_popular /*most popular section style*/
 {
     width: 100%;
-    height: 5%;
+    height: 25px;
     display: flex;
     justify-content: space-between;
 }
@@ -390,7 +390,7 @@ input[type] /*research part style*/
 .box_popular_housing /*most popular section style*/
 {
     width: 100%;
-    height: 22%;
+    height: 120px;
     display: flex;
     background-color: white;
     border-radius: 10px;
@@ -425,6 +425,16 @@ input[type] /*research part style*/
 {
     width: 100%;
     margin: 0px;
+}
+
+.para_popular_1, .para_popular_2
+{
+    margin: 0px;
+}
+
+.para_popular_2
+{
+    margin-top: 5px;
 }
 
 .plus
@@ -539,13 +549,25 @@ input[type] /*research part style*/
     margin: 0px;
 }
 
-
-
-footer
+.footer
 {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
     background-color: #F2F2F2;
+}
+
+
+.end
+{
+    width: 90%;
+    display: flex;
+    background-color: #F2F2F2;
+    margin: auto;
+}
+
+.about, .lodging, .assistance
+{
+    width: 100%;
 }
 
 .ul_footer
@@ -560,23 +582,3 @@ footer
     padding: 5px;
     padding-left: 0px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
