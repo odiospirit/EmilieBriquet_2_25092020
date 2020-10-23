@@ -7,45 +7,44 @@ body
 {   
     display: flex;
     flex-direction: column;
-    font-family: "Raleway", sans-serif;;
-    font-size: 0.8em;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5em;
     margin: 0px;
 }
-
+ 
 .page
 {
     width: 90%;
     padding-bottom: 50px;
     margin: auto;
 }
-
+ 
 body, header, .nav_left, .ul_nav, .research, .filters, .para_span_infos, #accomodations, .box_title_accommodations, .photo_housing, .plus, .box_title_popular, .box_popular_housing, .photo_popular, .p_popular, #activities, .box_title_activities, .box_all_activities, .photo_vieux_port, .photo_calanques,.photo_pomegues, .photo_frioul, .photo_la_garde, .photo_longchamp, .footer, .about, .lodging, .assistance
 {
     width: 100%;
 }
-
+ 
 header, .box_logo_nav_left, .nav_left, .ul_nav, .grey_border, .part_research, .input_button_search, .filters, .title_filters, .ul_filters, .li_filters, .box_infos, .para_span_infos, .span_infos, #accommodations, .box_all_accommodations, .plus, .box_all_most_popular, .box_title_popular, .box_popular_housing, .box_p_popular, .box_all_activities, .box_activities_vieux_port, .box_activities_calanques, .box_activities_pomegues_frioul, .box_activities_la_garde_longchamp, .box_pomegues, .box_frioul, .box_la_garde, .box_longchamp, .title_activities, .end, .footer
 {
     display: flex;
 }
-
+ 
 .photo_housing, .photo_popular, .photo_vieux_port, .photo_calanques, .photo_pomegues, .photo_frioul, .photo_la_garde, .photo_longchamp
 {
     object-fit: cover;
     object-position: center;
 }
-
+ 
 h1, strong, .title_activities
 {
     font-weight: bold;
 }
-
+ 
 .blue
 {
     color: #0065FC;
 }
-
-
+ 
 
 
 /*header style*/
@@ -57,7 +56,12 @@ h1, strong, .title_activities
 
 .box_logo
 {
-    width: 80%;
+    width: 70%;
+}
+
+.logo 
+{
+    width: 35%;
 }
 
 .box_nav_left
@@ -67,7 +71,7 @@ h1, strong, .title_activities
 
 .nav_left
 {
-    width: 20%;
+    width: 25%;
     justify-content: flex-end;
     margin: 0px;
 }
@@ -80,7 +84,7 @@ h1, strong, .title_activities
 
 .nav_right
 {
-    width: 20%;
+    width: 35%;
 }
 
 .ul_nav
@@ -111,7 +115,6 @@ a
     text-decoration: none;
     color: black;
 }
-
 
 
 /*first section style*/
@@ -159,56 +162,51 @@ input[type] /*research part style*/
     display: none;
 }
 
-.title_filters /*filters part style*/
+
+.filters /*filters part style*/
 {
-    align-items: center;
+    width: 95%;
+    margin-top: 50px;  
 }
 
 .ul_filters /*filters part style*/
 {
-    width: 70%;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 0px;
+    margin: 30px 0px 0px 0px;
 }
 
 .li_filters /*filters part style*/
 {
-    width: auto;
-    height: 80%;
+    height: 80px;
     align-items: center;
-    border: 2px solid rgb(231, 229, 229);
+    border: 5px solid rgb(231, 229, 229);
     border-left: none;
-    border-radius: 50px;
+    border-radius: 100px;
+    margin-bottom: 50px;
     list-style-type: none;
 }
 
 .icon_filters /*filters part style*/
 {
-    width: 20px;
-    padding: 10px;
+    width: 10%;
+    padding: 20px;
     background-color: #DEEBFF;
-    border-radius: 100px;
+    border-radius: 50px;
 }
 
 .icon_filters_child /*filters part style*/
 {
-    width: 20px;
-    padding: 5px 10px;
+    width: 45px;
+    padding: 12px 20px;
     background-color: #DEEBFF;
-    border-radius: 100px;
+    border-radius: 50px;
 }
 
 .type_filters /*filters part style*/
 {
-    padding: 10px;
-}
-
-.li_filters:hover /*hover effect style on li_filters*/
-{
-    background-color: #0065FC;
-    color: #F2F2F2;
-    box-shadow: 2px 2px 10px rgb(185, 184, 184);
+    padding: 0px 20px;
 }
 
 .box_infos /*infos part style*/
@@ -235,7 +233,6 @@ input[type] /*research part style*/
 {
     align-items: center;
 }
-
 
 
 /*second section style*/
@@ -296,34 +293,26 @@ input[type] /*research part style*/
     width: 10%;
 }
 
+
 .box_all_most_popular /*most popular section style*/
 {
-    width: 25%;
-    height: 500px;
-    flex-wrap: wrap;
     background-color: #F2F2F2;
-    border-radius: 10px;
-    padding: 30px;
+    border-radius: 0px;
 }
 
 .box_title_popular /*most popular section style*/
 {
-    height: 25px;
     justify-content: space-between;
-}
-
-.title_popular /*most popular section style*/
-{
-    margin: 0px;
 }
 
 .box_popular_housing /*most popular section style*/
 {
-    height: 127px;
+    height: 370px;
     background-color: white;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgb(185, 184, 184);
-    padding: 4px;
+    border-radius: 50px;
+    box-shadow: 20px 20px 20px #e6e3e3;
+    padding: 10px;
+    margin: 30px 0px;
 }
 
 .box_photo_popular /*most popular section style*/
@@ -334,15 +323,17 @@ input[type] /*research part style*/
 .photo_popular /*most popular section style*/
 {
     height: 100%;
-    border-radius: 10px 0px 0px 10px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50px 0px 0px 50px;
 }
 
 .box_p_popular /*most popular section style*/
 {
-    width: 50%;
+    width: 45%;
     flex-direction: column;
     justify-content: space-between;
-    padding: 10px;
+    padding: 20px 50px;
 }
 
 .p_popular, .para_popular_1, .para_popular_2 /*most popular section style*/
@@ -352,9 +343,8 @@ input[type] /*research part style*/
 
 .para_popular_2 /*most popular section style*/
 {
-    margin-top: 5px;
+    margin-top: 30px;
 }
-
 
 
 /*third section style*/
@@ -449,3 +439,4 @@ input[type] /*research part style*/
     padding: 5px;
     padding-left: 0px;
 }
+ 
