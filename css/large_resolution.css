@@ -5,8 +5,6 @@
 
 body
 {   
-    display: flex;
-    flex-direction: column;
     font-family: "Raleway", sans-serif;;
     font-size: 0.8em;
     margin: 0px;
@@ -19,7 +17,7 @@ body
     margin: auto;
 }
 
-body, header, .nav_left, .ul_nav, .research, .filters, .para_span_infos, #accomodations, .box_title_accommodations, .photo_housing, .plus, .box_title_popular, .box_popular_housing, .photo_popular, .p_popular, #activities, .box_title_activities, .box_all_activities, .photo_vieux_port, .photo_calanques,.photo_pomegues, .photo_frioul, .photo_la_garde, .photo_longchamp, .footer, .about, .lodging, .assistance
+body, header, .nav_left, .ul_nav, .research, .filters, .para_span_infos, #accommodations, .box_title_accommodations, .photo_housing, .plus, .box_title_popular, .box_popular_housing, .photo_popular, .p_popular, #activities, .box_title_activities, .box_all_activities, .photo_vieux_port, .photo_calanques,.photo_pomegues, .photo_frioul, .photo_la_garde, .photo_longchamp, .footer, .about, .lodging, .assistance
 {
     width: 100%;
 }
