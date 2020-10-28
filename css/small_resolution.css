@@ -7,11 +7,11 @@ body
 {   
     flex-direction: column;
     font-family: "Raleway", sans-serif;
-    font-size: 2.3em;
+    font-size: 1.7em;
     margin: 0px;
 }
 
-body, header, .nav_left, .ul_nav, .grey_border, .register, .photo_popular, .photo_housing, .photo_vieux_port, .photo_calanques,.box_photo_vieux_port, .box_photo_calanques, .photo_pomegues, .photo_frioul, .photo_la_garde, .photo_longchamp, .box_photo_pomegues, .box_photo_frioul, .box_photo_la_garde, .box_photo_longchamp, .footer
+body, header, .nav_left, .ul_nav, .grey_border, .input_button_search, .register, .photo_popular, .photo_housing, .photo_vieux_port, .photo_calanques,.box_photo_vieux_port, .box_photo_calanques, .photo_pomegues, .photo_frioul, .photo_la_garde, .photo_longchamp, .box_photo_pomegues, .box_photo_frioul, .box_photo_la_garde, .box_photo_longchamp, .footer
 {
     width: 100%;
 }
@@ -32,14 +32,9 @@ body, header, .nav_left, .ul_nav, .grey_border, .register, .part_research, .icon
      font-weight: bold;
  }
 
-.icon_stars, .icon_graph
+ .icon_map, .icon_search, .icon_filters, .icon_filters_child, .icon_graph, .icon_stars, .icon_stars_popular
 {
-    width: 5%;
-}
-
-.icon_stars_popular
-{
-    width: 10%;
+    width: 1em;
 }
 
 .padding_website_sides
@@ -114,6 +109,7 @@ body, header, .nav_left, .ul_nav, .grey_border, .register, .part_research, .icon
 
 .register
 {
+    height: 50px;
     justify-content: flex-end;
     padding-right: 50px;
 }
@@ -145,8 +141,7 @@ a
 
 .icon_map /*research part style*/
 {
-    width: 5%;
-    padding: 32px;
+    padding: 30px;
     border-radius: 30px 0px 0px 30px;
     background-color: #F2F2F2;  
 }
@@ -154,16 +149,17 @@ a
 .input_button_search /*research part style*/
 {
     border: 4px solid #F2F2F2;
+    border-right: none;
     border-radius: 0px 30px 30px 0px;
 }
 
 input /*research part style*/
 {
     width: 85%;
-    font-size: 1.3em;
+    font-size: 1em;
     font-weight: bold;
     border: none;
-    padding: 30px;
+    padding-left: 20px;
 }
 
 ::placeholder
@@ -173,7 +169,7 @@ input /*research part style*/
 
 .button_search /*research part style*/
 {
-    width: 15%;
+    width: 20%;
     justify-content: center;
     border-radius: 30px 30px 30px 30px;
     background-color: #0065FC;  
@@ -186,14 +182,12 @@ input /*research part style*/
 
 .icon_search /*research part style*/
 {
-    width: 50%;
     padding: 15px;
 }
 
 .filters /*filters part style*/
 {
-    width: 85%;
-    margin-top: 50px;  
+    width: 85%; 
 }
 
 .ul_filters /*filters part style*/
@@ -206,7 +200,7 @@ input /*research part style*/
 
 .li_filters /*filters part style*/
 {
-    height: 80px;
+    height: 60px;
     align-items: center;
     border: 5px solid rgb(231, 229, 229);
     border-left: none;
@@ -217,15 +211,13 @@ input /*research part style*/
 
 .icon_filters /*filters part style*/
 {
-    width: 10%;
-    padding: 20px;
+    padding: 25px;
     background-color: #DEEBFF;
     border-radius: 50px;
 }
 
 .icon_filters_child /*filters part style*/
 {
-    width: 45px;
     padding: 12px 20px;
     background-color: #DEEBFF;
     border-radius: 50px;
@@ -236,36 +228,21 @@ input /*research part style*/
     padding: 0px 20px;
 }
 
-.box_infos /*infos part style*/
-{
-    align-items: center;
-}
-
 .icon_infos /*infos part style*/
 {
-    width: 10px;
+    width: 0.3em;
     border: 3px solid rgb(231, 229, 229);
     border-radius: 50px;
     padding:  5px 15px;
     margin-right: 15px;
 }
 
-.para_span_infos /*infos part style*/
-{
-    flex-wrap: wrap;
-}
-
 .para_infos /*infos part style*/
 {
+    width: 85%;
     margin: 0px;
-    padding-top: 35px;
 }
 
-.span_infos /*infos part style*/
-{
-    width: auto;
-    align-items: center;
-}
 
 
 
@@ -289,7 +266,7 @@ input /*research part style*/
 
 .box_popular_housing /*most popular section style*/
 {
-    height: 370px;
+    height: 250px;
     background-color: white;
     border-radius: 50px;
     box-shadow: 20px 20px 20px #e6e3e3;
@@ -325,11 +302,12 @@ input /*research part style*/
 
 .para_popular_2 /*most popular section style*/
 {
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .box_housing /*accomodations section style*/
 {
+    height: 400px;
     border-radius: 50px;
     border: 1px solid #F2F2F2;
     box-shadow: 20px 20px 20px #F2F2F2;
@@ -339,13 +317,13 @@ input /*research part style*/
 
 .photo_housing /*accomodations section style*/
 {
-    height: 300px;
+    height: 250px;
     border-radius: 50px 50px 0px 0px;
 }
 
 .para_housing /*accomodations section style*/
 {
-    line-height: 70px;
+    line-height: 45px;
     margin: 0px;
     padding-left: 10px;
 }
@@ -366,7 +344,7 @@ input /*research part style*/
 
 .box_activities_vieux_port, .box_activities_calanques
 {
-    height: 530px;
+    height: 400px;
     flex-wrap: wrap;
     box-shadow: 20px 20px 20px #F2F2F2;
     border-radius: 50px;
@@ -375,7 +353,7 @@ input /*research part style*/
 
 .photo_vieux_port, .photo_calanques
 {
-    height: 400px;
+    height: 300px;
     border-radius: 50px 50px 0px 0px;
 }
 
@@ -386,7 +364,7 @@ input /*research part style*/
 
 .box_activities_pomegues, .box_activities_frioul, .box_activities_la_garde, .box_activities_longchamp
 {
-    height: 530px;
+    height: 400px;
     flex-wrap: wrap;
     border: 1px solid #F2F2F2;
     box-shadow: 20px 20px 20px #F2F2F2;
@@ -396,7 +374,7 @@ input /*research part style*/
 
 .photo_pomegues, .photo_frioul, .photo_la_garde, .photo_longchamp
 {
-    height: 400px;
+    height: 300px;
     border-radius: 50px 50px 0px 0px;
 }
 
@@ -432,7 +410,7 @@ input /*research part style*/
 .ul_footer
 {
     list-style: none;
-    line-height: 100px;
+    line-height: 50px;
     padding: 0px;
 }
 

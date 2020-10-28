@@ -39,6 +39,11 @@ h1, strong, .title_vieux_port, .title_pomegues, .title_frioul, .title_calanques,
 {
     font-weight: bold;
 }
+
+.icon_map, .icon_search, .icon_filters, .icon_filters_child, .icon_graph, .icon_stars, .icon_stars_popular
+{
+    width: 1em;
+}
  
 .blue
 {
@@ -138,13 +143,11 @@ a
 
 .part_research /*research part style*/
 {
-    width: 50%;
-    margin: 0px 250px;
+    justify-content: center;
 }
 
 .icon_map /*research part style*/
 {
-    width: 7%;
     padding: 20px;
     border-radius: 10px 0px 0px 10px;
     background-color: #DEEBFF;  
@@ -152,7 +155,7 @@ a
 
 .input_button_search /*research part style*/
 {
-    width: 95%;
+    width: 55%;
     border: 0.5px solid #F2F2F2;
     border-radius: 0px 10px 10px 0px;
 }
@@ -174,18 +177,17 @@ input /*research part style*/
 
 .button_search /*research part style*/
 {
-    padding: 12px;
     display: flex;
     align-items: center;
     font-weight: bold;
     border-radius: 0px 10px 10px 0px;
     background-color: #F2F2F2;  
     color: #0065FC;
+    padding: 12px;
 }
 
 .icon_search /*research part style*/
 {
-    width: 13px;
     color: white;
     display: none;
 }
@@ -194,7 +196,7 @@ input /*research part style*/
 {
     flex-direction: column;
     align-items: center;
-    margin-top: 65px;
+    margin-top: 45px;
 }
 
 
@@ -215,9 +217,6 @@ input /*research part style*/
 
 .li_filters /*filters part style*/
 {
-    width: auto;
-    height: 80%;
-    align-items: center;
     border: 2px solid rgb(231, 229, 229);
     border-left: none;
     border-radius: 50px;
@@ -227,15 +226,13 @@ input /*research part style*/
 
 .icon_filters /*filters part style*/
 {
-    width: 30px;
-    padding: 10px;
+    padding: 12px;
     background-color: #DEEBFF;
     border-radius: 100px;
 }
 
 .icon_filters_child /*filters part style*/
 {
-    width: 25px;
     padding: 5px 10px;
     background-color: #DEEBFF;
     border-radius: 100px;
@@ -248,13 +245,13 @@ input /*research part style*/
 
 .box_infos /*infos part style*/
 {
+    justify-content: center;
     align-items: center;
-    margin: 20px 270px;
 }
 
 .icon_infos /*infos part style*/
 {
-    width: 5px;
+    width: 0.3em;
     border: 3px solid #F2F2F2;
     border-radius: 20px;
     padding:  5px 10px;
@@ -263,13 +260,7 @@ input /*research part style*/
 
 .para_infos /*infos part style*/
 {
-    width: 85%;
-}
-
-.span_infos /*infos part style*/
-{
-    width: 50%;
-    align-items: center;
+    width: 65%;
 }
 
 
@@ -298,11 +289,6 @@ input /*research part style*/
 .title_popular
 {
     text-align: center;
-}
-
-.icon_graph
-{
-    width: 15%;
 }
 
 .box_popular_housing /*most popular section style*/
@@ -390,16 +376,6 @@ input /*research part style*/
 .plus /*accomodations section style*/
 {
     align-items: center;
-}
-
-.icon_stars /*accomodations and most popular section style*/
-{
-    width: 6%;
-}
-
-.icon_stars_popular /*accomodations and most popular section style*/
-{
-    width: 13%;
 }
 
 
