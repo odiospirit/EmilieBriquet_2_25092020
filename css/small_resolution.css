@@ -167,6 +167,7 @@ a
 .part_research
 {
     width: 235px;
+    height: 40px;
     margin: auto;
 }
 
@@ -295,6 +296,7 @@ input /*research part style*/
 .box_title_popular /*most popular section style*/
 {
     width: 235px;
+    height: 50px;
     margin: auto;
     justify-content: space-between;
 }

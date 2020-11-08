@@ -130,6 +130,7 @@ a
 .part_research /*research part style*/
 {
     width: 30%;
+    height: 40px;
 }
 
 .icon_map /*research part style*/
@@ -149,6 +150,7 @@ a
 input /*research part style*/
 {
     width: 75%;
+    font-size: 1em;
     color: black;
     font-weight: bold;
     border: none;
