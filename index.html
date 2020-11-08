@@ -8,8 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>Reservia, page d'accueil</title>
         <link rel="stylesheet" href="css/large_resolution.css" media="all and (min-width: 1200px)"/> <!-- Pour ceux qui ont une résolution supérieur à 1200px -->
-        <link rel="stylesheet" href="css/medium_resolution.css" media="all and (min-width: 769px) and (max-width: 1199px)"/> <!-- Pour ceux qui ont une résolution entre 481px et 1200px -->
-        <link rel="stylesheet" href="css/small_resolution.css" media="all and (max-width: 768px)"/> <!-- Pour ceux qui ont une résolution inférieure à 481px -->
+        <link rel="stylesheet" href="css/medium_resolution.css" media="all and (min-width: 768px) and (max-width: 1199px)"/> <!-- Pour ceux qui ont une résolution entre 481px et 1200px -->
+        <link rel="stylesheet" href="css/small_resolution.css" media="all and (max-width: 767px)"/> <!-- Pour ceux qui ont une résolution inférieure à 481px -->
     
     </head>
 
@@ -19,7 +19,7 @@
         <!--body split in 2 parts (page and footer)-->
 
 
-        <div class="page padding_website_top_bottom"> <!--first part of body-->
+        <div class="page"> <!--first part of body-->
 
             <header>
 
@@ -31,7 +31,7 @@
                     
                     </div>
 
-                    <p class="nav_left"><a class="para_header blue blue_border" href="#accommodations">Hébergements</a></p>
+                    <p class="nav_left"><a class="para_nav_left blue blue_border" href="#accommodations">Hébergements</a></p>
 
                 </div>
                 
@@ -39,11 +39,11 @@
 
                 <nav class="nav_right">
 
-                    <ul class="ul_nav">
+                    <ul class="ul_nav_right">
 
-                        <li class="grey_border"><a href="#activities">Activités</a></li>
+                        <li class="ul_nav_right_grey_border"><a href="#activities">Activités</a></li>
 
-                        <li class="register blue"><strong>S'inscrire</strong></li>
+                        <li class="ul_nav_right_register blue"><strong>S'inscrire</strong></li>
 
                     </ul>
 
@@ -56,14 +56,14 @@
 
             <section class="research padding_website_top_bottom">
 
-                <h1 class="title_research padding_website_sides">Trouvez votre hébergement pour des vacances de rêve</h1>
+                <h1 class="title_research">Trouvez votre hébergement pour des vacances de rêve</h1>
 
-                <p class="para_research padding_website_sides">En plein centre ville ou en pleine nature</p>
+                <p class="para_research">En plein centre ville ou en pleine nature</p>
 
 
             <!--Research part in 3 parts (icon / input field / search button)-->
 
-                <div class= "part_research padding_website_sides padding_website_top_bottom">
+                <div class= "part_research padding_website_top_bottom">
                
                     <img class="icon_map" src="icones_logo/icon_map.svg" alt="icon_map"/>
 
@@ -87,7 +87,7 @@
 
              <!--filters part-->
 
-                <div class="filters padding_website_sides">
+                <div class="filters">
 
                     <span class="title_filters"><strong>Filtres</strong></span>
 
@@ -125,7 +125,7 @@
                 </div>
 
 
-                <div class="box_infos padding_website_sides">
+                <div class="box_infos">
 
                     <div class="box_icon_infos">
 
@@ -151,13 +151,13 @@
 
             <section id="accommodations">
 
-                <div class="box_all_accommodations padding_website_sides padding_website_top_bottom">
+                <div class="box_all_accommodations padding_website_top_bottom">
 
                     <h1 class="box_title_accommodations">Hébergements à Marseille</h1>
 
-                    <div class="box_housing">
+                    <div class="box_housing"><a href="#">
 
-                        <a href="#"><img class="photo_housing" src="images/hebergements/auberge_de_la_cannebiere.jpg" alt="auberge_de_la_cannebiere"/></a>
+                        <img class="photo_housing" src="images/hebergements/auberge_de_la_cannebiere.jpg" alt="auberge_de_la_cannebiere"/>
                        
                         <p class="para_housing">
 
@@ -172,12 +172,12 @@
 
                         </p>
                 
-                    </div>
+                    </a></div>
 
            
-                    <div class="box_housing">
+                    <div class="box_housing"><a href="#">
 
-                        <a href="#"><img class="photo_housing" src="images/hebergements/hotel_du_port.jpg" alt="hotel_du_port"/></a>
+                        <img class="photo_housing" src="images/hebergements/hotel_du_port.jpg" alt="hotel_du_port"/>
 
                         <p class="para_housing">
                    
@@ -192,12 +192,12 @@
 
                         </p>
 
-                    </div>
+                    </a></div>
 
 
-                    <div class="box_housing">
+                    <div class="box_housing"><a href="#">
 
-                        <a href="#"><img class="photo_housing" src="images/hebergements/hotel_les_mouettes.jpg" alt="hotel_les_mouettes"/></a>
+                        <img class="photo_housing" src="images/hebergements/hotel_les_mouettes.jpg" alt="hotel_les_mouettes"/>
 
                         <p class="para_housing">
                     
@@ -212,12 +212,12 @@
 
                         </p>
 
-                    </div>
+                    </a></div>
 
             
-                    <div class="box_housing">
+                    <div class="box_housing"><a href="#">
 
-                        <a href="#"><img class="photo_housing" src="images/hebergements/hotel_de_la_mer.jpg" alt="hotel_de_la_mer"/></a>
+                        <img class="photo_housing" src="images/hebergements/hotel_de_la_mer.jpg" alt="hotel_de_la_mer"/>
 
                         <p class="para_housing">
                     
@@ -232,12 +232,12 @@
 
                         </p>
 
-                    </div>
+                    </a></div>
 
 
-                    <div class="box_housing">
+                    <div class="box_housing"><a href="#">
 
-                        <a href="#"><img class="photo_housing" src="images/hebergements/auberge_le_panier.jpg" alt="auberge_le_panier"/></a>
+                        <img class="photo_housing" src="images/hebergements/auberge_le_panier.jpg" alt="auberge_le_panier"/>
 
                         <p class="para_housing">
                     
@@ -252,12 +252,12 @@
 
                         </p>
 
-                    </div>
+                    </a></div>
 
 
-                    <div class="box_housing">
+                    <div class="box_housing"><a href="#">
 
-                        <a href="#"><img class="photo_housing" src="images/hebergements/hotel_chez_amina.jpg" alt="hotel_chez_amina"/></a>
+                        <img class="photo_housing" src="images/hebergements/hotel_chez_amina.jpg" alt="hotel_chez_amina"/>
                         
                         <p class="para_housing">
                     
@@ -276,13 +276,13 @@
                     
                     <p class="plus"><strong>Afficher plus</strong></p>
 
-                </div>
+                </a></div>
 
 
                  <!--results of most popular-->
 
 
-                <div class="box_all_most_popular padding_website_sides padding_website_top_bottom">
+                <div class="box_all_most_popular padding_website_top_bottom">
 
                     <div class="box_title_popular">
 
@@ -293,10 +293,10 @@
                     </div>
 
 
-                    <div class="box_popular_housing">
-
-                        <a class="box_photo_popular" href="#"><img class="photo_popular" src="images/hebergements/hotel_le_soleil_du_matin.jpg" alt="hotel_le_soleil_du_matin"/></a>
+                    <div class="box_popular_housing"><a class="box_popular_housing_link" href="#">
                         
+                        <img class="photo_popular" src="images/hebergements/hotel_le_soleil_du_matin.jpg" alt="hotel_le_soleil_du_matin"/>
+
                         <div class="box_p_popular">
                             
                             <div class="p_popular">
@@ -319,12 +319,12 @@
 
                         </div>
 
-                    </div>
+                    </a></div>
 
                     
-                    <div class="box_popular_housing">
+                    <div class="box_popular_housing"><a class="box_popular_housing_link" href="#">
 
-                        <a class="box_photo_popular" href="#"><img class="photo_popular" src="images/hebergements/au_coeur_de_leau_chambres_dhotes.jpg" alt="au_coeur_de_leau_chambres_dhotes"/></a>
+                        <img class="photo_popular" src="images/hebergements/au_coeur_de_leau_chambres_dhotes.jpg" alt="au_coeur_de_leau_chambres_dhotes"/>
 
                         <div class="box_p_popular">
 
@@ -348,12 +348,12 @@
                             
                         </div> 
 
-                    </div>
+                    </a></div>
 
 
-                    <div class="box_popular_housing">
+                    <div class="box_popular_housing"><a class="box_popular_housing_link" href="#">
 
-                        <a class="box_photo_popular" href="#"><img class="photo_popular" src="images/hebergements/hotel_tout_bleu_et_blanc.jpg" alt="hotel_tout_bleu_et_blanc"/></a>
+                        <img class="photo_popular" src="images/hebergements/hotel_tout_bleu_et_blanc.jpg" alt="hotel_tout_bleu_et_blanc"/>
 
                         <div class="box_p_popular">
 
@@ -377,7 +377,7 @@
 
                         </div>
 
-                    </div>
+                    </a></div>
 
                 </div>
 
@@ -390,68 +390,68 @@
 
             <section id="activities" class="padding_website_top_bottom">
         
-                <h1 class="box_title_activities padding_website_sides">Activités à Marseille</h1>
+                <h1 class="box_title_activities">Activités à Marseille</h1>
 
-                <div class="box_all_activities padding_website_sides">
+                <div class="box_all_activities">
 
-                    <div class="box_activities_vieux_port">
+                    <div class="box_activities_vieux_port"><a class="box_photo_vieux_port" href="#">
 
-                        <a class="box_photo_vieux_port" href="#"><img class="photo_vieux_port" src="images/activites/vieux_port.jpg" alt="vieux_port"/></a> 
+                        <img class="photo_vieux_port" src="images/activites/vieux_port.jpg" alt="vieux_port"/>
 
                         <p class="title_vieux_port">Vieux Port</p>
 
-                    </div>
+                    </a></div>
 
 
                     <div class="box_activities_pomegues_frioul">
 
-                        <div class="box_activities_pomegues">
+                        <div class="box_activities_pomegues"><a class="box_photo_pomegues" href="#">
 
-                            <a class="box_photo_pomegues" href="#"><img class="photo_pomegues" src="images/activites/fort_de_pomegues.jpg" alt="fort_de_pomegues"/></a> 
+                            <img class="photo_pomegues" src="images/activites/fort_de_pomegues.jpg" alt="fort_de_pomegues"/>
 
                             <p class="title_pomegues">Fort de Pomègues</p>
 
-                        </div>
+                        </a></div>
 
 
-                        <div class="box_activities_frioul">
+                        <div class="box_activities_frioul"><a class="box_photo_frioul" href="#">
 
-                            <a class="box_photo_frioul" href="#"><img class="photo_frioul" src="images/activites/iles_du_frioul.jpg" alt="iles_du_frioul"/></a> 
+                            <img class="photo_frioul" src="images/activites/iles_du_frioul.jpg" alt="iles_du_frioul"/>
 
                             <p class="title_frioul">Îles du Frioul</p>
 
-                        </div>
+                        </a></div>
                     
                      </div>
                 
 
-                    <div class="box_activities_calanques">
+                    <div class="box_activities_calanques"><a class="box_photo_calanques" href="#">
                             
-                        <a class="box_photo_calanques" href="#"><img class="photo_calanques" src="images/activites/parc_national_des_calanques.jpg" alt="parc_national_des_calanques"/></a> 
+                        <img class="photo_calanques" src="images/activites/parc_national_des_calanques.jpg" alt="parc_national_des_calanques"/>
 
                         <p class="title_calanques">Parc National des Calanques</p>
 
-                    </div>
+                    </a></div>
 
                 
                     <div class="box_activities_la_garde_longchamp">
 
-                        <div class="box_activities_la_garde">
+                        <div class="box_activities_la_garde"><a class="box_photo_la_garde" href="#">
 
-                            <a class="box_photo_la_garde" href="#"><img class="photo_la_garde" src="images/activites/notre_dame_de_la_garde.jpg" alt="notre_dame_de_la_garde"/></a> 
+                            <img class="photo_la_garde" src="images/activites/notre_dame_de_la_garde.jpg" alt="notre_dame_de_la_garde"/> 
 
                             <p class="title_la_garde">Notre-Dame-de-la-Garde</p>
 
-                        </div>
+                        </a></div>
 
 
-                        <div class="box_activities_longchamp">    
+                        <div class="box_activities_longchamp"><a class="box_photo_longchamp" href="#">  
                             
-                            <a class="box_photo_longchamp" href="#"><img class="photo_longchamp" src="images/activites/parc_longchamp.jpg" alt="parc_longchamp"/></a> 
+                            <img class="photo_longchamp" src="images/activites/parc_longchamp.jpg" alt="parc_longchamp"/> 
 
                             <p class="title_longchamp">Parc Longchamp</p>
                         
-                        </div>
+                        </a></div>
                     
                     </div>
 
