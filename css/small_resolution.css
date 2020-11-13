@@ -7,8 +7,11 @@ body
 {   
     flex-direction: column;
     font-family: "Raleway", sans-serif;
-    font-size: 0.7em;
     margin: 0px;
+}
+.page
+{
+    font-size: 0.7em;
 }
 
 body, header, .nav_left, .ul_nav_right_grey_border, .ul_nav_right_register, .input_button_search, .photo_popular, .photo_housing, .photo_vieux_port, .photo_calanques,.box_photo_vieux_port, .box_photo_calanques, .photo_pomegues, .photo_frioul, .photo_la_garde, .photo_longchamp, .box_photo_pomegues, .box_photo_frioul, .box_photo_la_garde, .box_photo_longchamp, .footer
@@ -31,6 +34,11 @@ body, header, .nav_left, .ul_nav_right, .ul_nav_right_grey_border, .ul_nav_right
  {
     font-weight: bold;
  }
+
+ h2
+{
+    font-size: 1.2em;
+}
 
  .icon_map, .icon_search, .icon_filters, .icon_filters_child, .icon_stars, .icon_stars_popular
 {
@@ -479,6 +487,7 @@ input /*research part style*/
 
 .li_footer
 {
+    font-size: 0.7em;
     margin: 0px;
     padding: 5px;
     padding-left: 0px;

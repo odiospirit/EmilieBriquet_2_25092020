@@ -8,13 +8,13 @@ body
     display: flex;
     flex-direction: column;
     font-family: "Raleway", sans-serif;
-    font-size: 0.7em;
     margin: 0px;
 }
  
 .page
 {
     width: 90%;
+    font-size: 0.8em;
     padding-bottom: 50px;
     margin: auto;
 }
@@ -38,6 +38,11 @@ header, .box_logo_nav_left, .nav_left, .ul_nav_right, .ul_nav_right_grey_border,
 h1, strong, .title_vieux_port, .title_pomegues, .title_frioul, .title_calanques, .title_la_garde, .title_longchamp
 {
     font-weight: bold;
+}
+
+h2
+{
+    font-size: 1.2em;
 }
 
 .icon_map, .icon_search, .icon_filters, .icon_filters_child, .icon_stars, .icon_stars_popular
@@ -537,6 +542,7 @@ input /*research part style*/
 
 .li_footer
 {
+    font-size: 0.8em;
     padding: 5px;
     padding-left: 0px;
 } 
