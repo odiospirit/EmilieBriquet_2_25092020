@@ -22,7 +22,7 @@ body, header, .nav_left, .ul_nav_right, .research, .filters, .para_infos, #accom
     width: 100%;
 }
 
-header, .box_logo_nav_left, .nav_left, .ul_nav_right, .ul_nav_right_grey_border, .part_research, .input_button_search, .filters, .title_filters, .ul_filters, .li_filters, .box_infos, .para_span_infos, .span_infos, #accommodations, .box_all_accommodations, .plus, .box_all_most_popular, .box_title_popular, .box_popular_housing, .box_p_popular, .box_all_activities, .box_activities_vieux_port, .box_activities_calanques, .box_activities_pomegues_frioul, .box_activities_la_garde_longchamp, .box_pomegues, .box_frioul, .box_la_garde, .box_longchamp, .title_vieux_port, .title_pomegues, .title_frioul, .title_calanques, .title_la_garde, .title_longchamp, .end, .footer
+header, .box_logo_nav_left, .nav_left, .ul_nav_right, .ul_nav_right_grey_border, .part_research, .input_button_search, .filters, .title_filters, .ul_filters, .li_filters, .box_infos, #accommodations, .box_all_accommodations, .plus, .box_all_most_popular, .box_title_popular, .box_popular_housing, .box_p_popular, .box_all_activities, .box_activities_vieux_port, .box_activities_calanques, .box_activities_pomegues_frioul, .box_activities_la_garde_longchamp, .para_vieux_port, .para_pomegues, .para_frioul, .para_calanques, .para_la_garde, .para_longchamp, .end, .footer
 {
     display: flex;
 }
@@ -33,7 +33,7 @@ header, .box_logo_nav_left, .nav_left, .ul_nav_right, .ul_nav_right_grey_border,
     object-position: center;
 }
 
-h1, strong, .title_vieux_port, .title_pomegues, .title_frioul, .title_calanques, .title_la_garde, .title_longchamp
+h1, strong, .para_vieux_port, .para_pomegues, .para_frioul, .para_calanques, .para_la_garde, .para_longchamp
 {
     font-weight: bold;
 }
@@ -56,6 +56,12 @@ h2
 .blue
 {
     color: #0065FC;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -120,12 +126,6 @@ h2
     width: 50%;
     text-align: center;
     padding-top: 22px;
-}
-
-a
-{
-    text-decoration: none;
-    color: black;
 }
 
 
@@ -458,7 +458,7 @@ input /*research part style*/
     margin-bottom: 27px;
 }
 
-.title_vieux_port, .title_pomegues, .title_frioul, .title_calanques, .title_la_garde, .title_longchamp
+.para_vieux_port, .para_pomegues, .para_frioul, .para_calanques, .para_la_garde, .para_longchamp
 {
     height: 30px;
     align-items: center;
