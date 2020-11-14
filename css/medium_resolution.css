@@ -12,7 +12,7 @@ body
 .page
 {
     width: 90%;
-    font-size: 0.8em;
+    font-size: 0.7em;
     padding-bottom: 50px;
     margin: auto;
 }
@@ -527,7 +527,7 @@ input /*research part style*/
 
 .footer
 {
-    font-size: 0.8em;
+    font-size: 0.7em;
     background-color: #F2F2F2;
 }
 
