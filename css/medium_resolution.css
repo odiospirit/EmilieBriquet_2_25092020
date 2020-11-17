@@ -12,7 +12,7 @@ body
 .page
 {
     width: 90%;
-    font-size: 0.7em;
+    font-size: 0.6em;
     padding-bottom: 50px;
     margin: auto;
 }
@@ -157,7 +157,7 @@ a
 
 .part_research /*research part style*/
 {
-    width: 500px;
+    max-width: 450px;
     height: 45px;
     justify-content: center;
     margin: auto;
@@ -219,17 +219,15 @@ input /*research part style*/
 
 .title_filters /*filters part style*/
 {
-    width: 100px;
     font-size: 1.5em;
     align-items: center;
-    margin: auto;
 }
 
 .ul_filters /*filters part style*/
 {
-    width: 100%;
+    max-width: 450px;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     padding: 0px;
 }
 
@@ -240,7 +238,7 @@ input /*research part style*/
     border-left: none;
     border-radius: 50px;
     list-style-type: none;
-    margin-right: 30px;
+    margin: 0px 30px 10px 0px;
 }
 
 .icon_filters /*filters part style*/
