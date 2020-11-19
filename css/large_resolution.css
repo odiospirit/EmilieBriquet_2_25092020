@@ -120,16 +120,17 @@ a
     padding-top: 22px;
 }
 
-.link_nav_right:hover, .para_nav_left:hover
-{
-    color: #0065FC;
-}
 
 .ul_nav_right_register
 {
     width: 50%;
     text-align: center;
     padding-top: 22px;
+}
+
+.link_nav_right:hover
+{
+    color: #0065FC;
 }
 
 .ul_nav_right_grey_border:hover, .para_nav_left:hover

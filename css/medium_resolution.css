@@ -130,6 +130,11 @@ a
     padding-top: 22px;
 }
 
+.link_nav_right:hover
+{
+    color: #0065FC;
+}
+
 .ul_nav_right_grey_border:hover, .para_nav_left:hover
 {
     border-top: 2px solid #0065FC;
