@@ -93,7 +93,6 @@ a
 {
     width: 25%;
     justify-content: center;
-    border-top: 2px solid #0065FC;
     margin: 0px;
 }
 
@@ -131,10 +130,10 @@ a
     padding-top: 22px;
 }
 
-a
+.ul_nav_right_grey_border:hover, .para_nav_left:hover
 {
-    text-decoration: none;
-    color: black;
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
 }
 
 

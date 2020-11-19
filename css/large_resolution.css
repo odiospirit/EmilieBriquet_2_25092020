@@ -88,7 +88,6 @@ a
 {
     width: 15%;
     justify-content: flex-end;
-    border-top: 2px solid #0065FC;
     margin: 0px;
 }
 
@@ -121,12 +120,24 @@ a
     padding-top: 22px;
 }
 
+.link_nav_right:hover, .para_nav_left:hover
+{
+    color: #0065FC;
+}
+
 .ul_nav_right_register
 {
     width: 50%;
     text-align: center;
     padding-top: 22px;
 }
+
+.ul_nav_right_grey_border:hover, .para_nav_left:hover
+{
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
+
 
 
 
