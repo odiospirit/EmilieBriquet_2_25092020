@@ -269,7 +269,7 @@ input /*research part style*/
 
 .box_infos /*infos part style*/
 {
-    margin-top: 10px;
+    margin-bottom: 10px;
     justify-content: center;
     align-items: center;
 }
@@ -301,24 +301,24 @@ input /*research part style*/
 
 .box_title_popular /*most popular section style*/
 {
-    flex-direction: column-reverse;
+    position: absolute;
+    left: 10px;
     justify-content: center;
-    align-items: center;
 }
 
 .title_popular
 {
-    text-align: center;
+    margin-right: 10px;
 }
 
 .box_popular_housing /*most popular section style*/
 {
-    height: 150px;
+    height: 115px;
     background-color: white;
     border-radius: 30px;
     box-shadow: 5px 5px 20px #e6e3e3;
     padding: 3px;
-    margin: 30px 5px;
+    margin: 50px 5px;
 }
 
 .box_popular_housing_link
@@ -329,7 +329,7 @@ input /*research part style*/
 
 .photo_popular /*most popular section style*/
 {
-    width: 40%;
+    width: 48%;
     height: 100%;
     object-fit: cover;
     object-position: center;
